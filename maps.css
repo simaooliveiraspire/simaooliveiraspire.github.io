@@ -1,0 +1,82 @@
+@font-face {
+  font-family: druk-web;
+  src: url(DrukWide-Medium.woff2) format("woff2"), url(DrukWide-Medium.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+html {
+  font-family: druk-web;
+  width: 100%;
+  height: 100%;
+  line-height: 1em;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  box-sizing: border-box;
+}
+.toggles {
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  z-index: 1000000000;
+}
+#dais-toggle,
+#sais-toggle {
+  opacity: 0;
+  float: left;
+  display: block;
+  background: white;
+  border: 1px solid #E31A19;
+  color: #E31A19;
+  padding: 1.2em 1em 1em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: .6em;
+}
+#dais-toggle.active,
+#sais-toggle.active {
+  opacity: 1;
+  background: #E31A19;
+  color: white;
+}
+#dais-toggle.active .active,
+#sais-toggle.active .active {
+  display: inline;
+}
+#dais-toggle.active .notactive,
+#sais-toggle.active .notactive {
+  display: none;
+}
+#dais-toggle .active,
+#sais-toggle .active {
+  display: none;
+}
+#dais-toggle:hover,
+#sais-toggle:hover {
+  opacity: .8;
+}
+#dais-toggle {
+  margin-left: 1em;
+}
+#sais-toggle {
+  border-color: #12677B;
+  color: #12677B;
+}
+#sais-toggle.active {
+  background: #12677B;
+  color: white;
+}
