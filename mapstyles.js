@@ -9,21 +9,12 @@ var mapstyles=[
         ]
     },
     {
-        "featureType": "administrative.country",
-        "elementType": "geometry.stroke",
+        "featureType": "administrative",
+        "elementType": "geometry",
         "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.province",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
+          {
+            "visibility": "off"
+          }
         ]
     },
     {
