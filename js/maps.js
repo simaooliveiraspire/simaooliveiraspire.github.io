@@ -109,7 +109,7 @@ $(document).ready(function(){
 		var files=['sais', 'dais'];
 		for(i in files){
 			$.ajax({
-				url:files[i]+'.geojson',
+				url:'data/'+files[i]+'.geojson',
 				dataType:'json',
 				myid:files[i],
 				success:function(response){
